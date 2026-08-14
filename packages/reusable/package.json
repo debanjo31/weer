@@ -8,8 +8,8 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
+    "dev": "node init && tsc --watch",
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@weer/common": "1.0.0",

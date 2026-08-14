@@ -7,7 +7,6 @@ packages/stressor/codes.txt
 temp
 node_modules
 .DS_Store
-.env
 deploy.sh
 logs
 
@@ -20,3 +19,4 @@ packages/reusable/dist
 packages/common/dist
 packages/server/dist
 
+config.bat
