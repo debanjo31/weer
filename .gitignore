@@ -7,7 +7,6 @@ packages/stressor/codes.txt
 temp
 node_modules
 .DS_Store
-.env
 deploy.sh
 logs
 todo.md
@@ -26,3 +25,4 @@ packages/common/src/config
 packages/server/dist
 packages/server-turbo/target
 
+config.bat
