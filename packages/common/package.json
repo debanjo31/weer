@@ -9,8 +9,8 @@
     "json5": "^2.2.3"
   },
   "scripts": {
-    "build:config": "node init && mkdir -p src/config && for f in config/*.json5; do json5 -s 2 -o src/${f%5} $f; done",
-    "dev": "node init && yarn build:config && tsc --watch",
-    "build": "node init && yarn build:config && tsc"
+    "build:config": "mkdir -p src/config && for f in config/*.json5; do json5 -s 2 -o src/${f%5} $f; done",
+    "dev": "yarn build:config && tsc --watch",
+    "build": "yarn build:config && tsc"
   }
 }
