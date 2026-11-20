@@ -5,11 +5,11 @@
   "scripts": {
     "seed": "cd ../server && yarn seed",
     "test": "./env.sh DB_DATABASE=weer_test NODE_ENV=test SKIP_EMAIL=true PADDLE_API_URL=http://127.0.0.1:2090 cargo test",
-    "dev": "node init && ./env.sh cargo watch -x 'run --bin index'",
+    "dev": "./env.sh cargo watch -x 'run --bin index'",
     "janitor": "./env.sh cargo run --bin janitor",
-    "build": "node init && cargo build --release",
+    "build": "cargo build --release",
     "precompress": "cargo run --release --bin precompress",
-    "start": "node init && ./env.sh ./target/release/index",
+    "start": "./env.sh ./target/release/index",
     "prod": "./env.sh pm2 start ecosystem.config.cjs"
   },
   "author": "",
